@@ -1,0 +1,118 @@
+
+@import url('https://fonts.googleapis.com/css?family=PT+Sans|Poppins:700');
+
+body{
+	font-size: 1rem;
+	margin: 0;
+	background: #ecf0f1;
+}
+
+p, span{
+	font-family: 'PT Sans', sans-serif;
+}
+
+header{
+	display: flex;
+	margin: 0 auto;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	align-content: center;
+}
+
+header .profile__photo{
+	margin: 0 20px;
+}
+
+.profile__photo img{
+	max-width: 10rem;
+	border-radius: 10rem;
+}
+
+.about{
+	text-align: center;
+	font-family: 'Poppins', sans-serif;
+}
+
+
+.about h1{
+ 	font-size: 3rem;
+}
+
+.about p{
+	font-size: 1rem;
+}
+
+/* container*/
+
+.container{
+	margin: auto 0;
+}
+
+.grid{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+
+}
+
+.item{
+	padding: 20px;
+	transition: transform 0.3s ease-in-out;
+}
+
+.item:hover{
+	  transform: scale(1.05);
+}
+
+figcaption.item_details{
+	background: white;
+	padding: 1rem 0rem;
+}
+
+
+figcaption.item_details img{
+	padding: 0 1rem;
+}
+
+footer p{
+	text-align: center;
+}
+
+
+
+@media (min-width: 768px){
+	header{
+	flex-direction: row;
+	justify-content: start; 
+	max-width: 992px;
+	}
+
+	header .profile__photo{
+	margin:1rem 3rem;
+   }
+	.about{
+   	text-align: left;
+   }
+
+   .about h1{
+   	font-size: 4rem;
+   	margin: 0;
+   	padding: 0;
+   }
+
+   .profile__photo img{
+	max-width: 20rem;
+	border-radius: 10rem;
+}
+
+	.container{
+		max-width: 992px;
+		margin: 0 auto;
+	}
+	.item{
+		padding: 10px;
+	}
+	
+}
+
